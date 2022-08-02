@@ -1,12 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
 
-const GifCard = props => {
+export default function GifCard() {
   return (
-    <div>GifCard</div>
-  )
+    <div className='bg-red-800 text-3xl flex justify-center items-center p-6 rounded-2xl drop-shadow-2xl h-full row-span-2 '>
+      <p className='block'>text</p>
+    </div>
+  );
 }
-
-GifCard.propTypes = {}
-
-export default GifCard
