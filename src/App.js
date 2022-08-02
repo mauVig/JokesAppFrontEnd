@@ -15,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     fetch('http://localhost:80/jokes/one', {
-      'Access-Control-Allow-Headers': 'application/json',
+      'Access-Control-Allow-Headers':'application/json',
     })
       .then((aux) => aux.json())
       .then((data) => {
@@ -28,7 +28,7 @@ export default function App() {
   const handlerNext = () => {
     setBool((x) => !x);
   };
-
+/// agregar roter 
   return (
     <>
       <div className='bg-red-300 w-screen h-screen p-4 '>
