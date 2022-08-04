@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-import {
-  AiOutlineLike,
-  AiOutlineDislike,
-  AiTwotoneDislike,
-  AiTwotoneLike,
-} from 'react-icons/ai';
 import { GiRollingDices } from 'react-icons/gi';
 
 import st from '../styles/details.module.css';
 
-import { motion } from 'framer-motion';
+import LikeOrNot from '../components/LikeOrNot'
 
 export default function Score() {
   return (
@@ -35,17 +30,7 @@ export default function Score() {
         className={`${st.heiLong}`}
       >
         <div>
-          <div>
-            <h2 className='text-center my-14 text-3xl'>¿ Te gusto ?</h2>
-            <div className='flex justify-around'>
-              <button className='flex justify-center items-center bg-rose-800 text-white px-6 rounded-3xl active:scale-110 text-4xl hover:bg-rose-700 transition-all duration-300 scale-125 hover:scale-150 p-4'>
-                <AiOutlineLike className='' />
-              </button>
-              <button className='flex justify-center items-center bg-rose-800 text-white px-6 rounded-3xl active:scale-110 text-4xl hover:bg-rose-700 transition-all duration-300 scale-125 hover:scale-150 p-4'>
-                <AiOutlineDislike />
-              </button>
-            </div>
-          </div>
+          <LikeOrNot />
           <div>
             <div className='bg-red-400 mx-auto h-1/4 mt-10 flex justify-center py-8'>
               <div className='flex items-center flex-col'>
