@@ -1,10 +1,14 @@
 .cont{
     max-width: 400px;
-    height:100%;
+    height: 100%;
 }
 .heiLong{
     height:100%;
 }
 .textCss{
     letter-spacing:1px;
+}
+.box{
+    height:100%;
+    margin: auto 0;
 }
